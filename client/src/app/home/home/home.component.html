@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="jumbotron starter-template">
+    <h2>Your meal for today</h2>
+    <app-random-meal [foodItems]="(randomMeal$|async)" [loading]="(loading$|async)"></app-random-meal>
+    <br/>
+    <button type="button" class="btn btn-primary" (click)="updateFood()">Get new Meal</button>
+  </div>
+
+  <!-- Site footer -->
+  <app-emeal-footer></app-emeal-footer>
+
+</div>
+<!-- /.container -->
